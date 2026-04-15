@@ -51,7 +51,6 @@ def merge(left, right):
 import gradio as gr
 
 def sort_input(text):
-    print("function is running")
     lines = text.split("\n")
     stops = []
 
@@ -79,7 +78,7 @@ def sort_input(text):
     for stop in sorted_stops:
         output += stop[0] + " - " + str(stop[1]) + "\n"
 
-    print(output)
+
     return output
 
 app = gr.Interface(
