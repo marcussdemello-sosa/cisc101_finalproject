@@ -4,7 +4,7 @@
 I must organize shuttle stops based on how crowded they are. Each shuttle stop comes with a name and a crowd count. The goal is to sort the stops so that I can see which stops are the most crowded.
 
 ### Chosen Algorithm:
-I've selected to go with Merge Sort.  It works by splitting a list into smaller parts, sorting those parts, and then merging them back together in order.  
+I've selected to go with Merge Sort.  It works by splitting a list into smaller parts, and then sorting those parts, and then merging them back together in order.  
 
 ### Why Merge Sort Fits the Problem
 Each shuttle stop has a crowd count that can be compared easily, so merge sort fits the problem well.  It's also able to easily display how the list was sorted and merged, making it easy for users to understand the process.
@@ -16,16 +16,10 @@ Each shuttle stop has a crowd count that can be compared easily, so merge sort f
 
 -the list doesn't need to be sorted before running the algorithm
 
-## Demo video/gif/screenshot of test
+## Demo Screenshot
 
 ### Valid Input
-![Valid Run](validrun.png)
-
-### Invalid Number
-![Error Number](badnumber.png)
-
-### Invalid Format
-![Error Format](badformat.png)
+![Valid Run](goodrun.png)
 
 ## Problem Breakdown & Computational Thinking
 
@@ -43,7 +37,7 @@ Each shuttle stop has a crowd count that can be compared easily, so merge sort f
 
 ### Pattern Recognition:
 
--repeatedly splitting the list into smaller ones
+-repeatedly splitting list into smaller ones
 
 -compares elements and then merges them back in order
 
@@ -51,7 +45,7 @@ Each shuttle stop has a crowd count that can be compared easily, so merge sort f
 
 ### Abstraction
 
--I only need to show the important steps, such as splitting & merging
+-I only need to show the important steps such as splitting & merging
 
 -hide things like memory or recursion depth
 
@@ -71,7 +65,7 @@ Process:
 
 -merge lists back together in sorted order
 
-Output: Sorted list of shuttle stops ranging from lowest to highest crowd
+Output: Sorted list of shuttle stops ranging lowest to highest crowd
 
 ### Flowchart
 
@@ -90,8 +84,34 @@ https://huggingface.co/spaces/marcusdemello/shuttlesort
 
 ## Testing
 
-I tested my program with normal inputs in the correct format using multiple shuttle stops and different crowd counts.  For example, I used familiar stops like ARC, Main Library, Residence, and BioSci each with different numbers, and the program sorted them correctly from the lowest to highest crowd counts.  I also had to test my program using invalid input, so I tried using a word instead of a number, and also an incorrect format.  Both times the output fit the proper error, and it told me whether it was a formatting issue or a substance issue.  These tests show that the program works for normal cases as well as simple error cases.
+With input that can be whatever the user wants, there are plenty of edge cases that need to be accounted for.  Each needs to be caught specifically so that the user knows their mistake and can adjust input.  Here are my tests:
+
+#### Wrong Format
+It's easy for the user to accidentally mess up the formatting of their input, so in this case we see what happens when they do.  The program catches that it was a format error, lets them know, and also provides the correct format guidelines.
+
+![Wrong Format](wrongformat.png)
+
+
+#### Missing Stop Name
+The program is able to handle a situation where the user doesn't input a name for a stop.  It specifically tells them to add one.
+
+![Blank Stop Name](missingname.png)
+
+#### Not a Whole Number
+If the user enters a number value that's either a word or a decimal, the program tells them to ensure their input includes a whole number.
+
+![Not a Whole Number](wholenumber.png)
+
+#### Negative Number
+In the case of a user inputting a negative population at one of the stops, the program is able to respond with their error.
+
+![Negative Number](negativenumber.png)
+
+#### Empty Input
+If the user doesn't even input anything, the program can still let them know what their problem was.
+
+![Empty Input](blank.png)
 
 ## Author & AI Acknowledgment
 Author: Marcus DeMello
-AI Disclosure: I used AI (ChatGPT) throughout the entire development of this project, which includes helping me refine and generate portions of the merge sort code, helping with debugging my code errors, guiding the setup of the Gradio interface, helping with structuring the README, and clarifying some parts of the algorithm.  All code, testing, and final decisions were reviewed, modified, and understood by me.  
+AI Disclosure:  AI such as ChatGPT was used to debug code, help with structuring, help with efficiency, and provide new ideas.  All final changes, testing, and modifications were done by me.	
