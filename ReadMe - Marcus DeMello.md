@@ -1,10 +1,10 @@
 # Algorithm Name: Shuttle Stop Crowding Ranking using Merge Sort
 
 ### Chosen Problem:
-I must organize shuttle stops based off how crowded they are. Each shuttle stop comes with a name and a crowd count. The goal is to sort the stops so that I can see which stops are the most crowded.
+I must organize shuttle stops based on how crowded they are. Each shuttle stop comes with a name and a crowd count. The goal is to sort the stops so that I can see which stops are the most crowded.
 
 ### Chosen Algorithm:
-I've selected to go with Merge Sort.  It works by splitting a list into smaller parts, and then sorting those parts, and then merging them back together in order.  
+I've selected to go with Merge Sort.  It works by splitting a list into smaller parts, sorting those parts, and then merging them back together in order.  
 
 ### Why Merge Sort Fits the Problem
 Each shuttle stop has a crowd count that can be compared easily, so merge sort fits the problem well.  It's also able to easily display how the list was sorted and merged, making it easy for users to understand the process.
@@ -43,7 +43,7 @@ Each shuttle stop has a crowd count that can be compared easily, so merge sort f
 
 ### Pattern Recognition:
 
--repeatedly splitting list into smaller ones
+-repeatedly splitting the list into smaller ones
 
 -compares elements and then merges them back in order
 
@@ -51,13 +51,13 @@ Each shuttle stop has a crowd count that can be compared easily, so merge sort f
 
 ### Abstraction
 
--I only need to show the important steps such as splitting & merging
+-I only need to show the important steps, such as splitting & merging
 
 -hide things like memory or recursion depth
 
 -focusing on how the list changes during sorting
 
-### Algrithm Design
+### Algorithm Design
 
 Input: shuttle stops and crowd counts
 
@@ -71,7 +71,7 @@ Process:
 
 -merge lists back together in sorted order
 
-Output: Sorted list of shuttle stops ranging lowest to highest crowd
+Output: Sorted list of shuttle stops ranging from lowest to highest crowd
 
 ### Flowchart
 
@@ -90,8 +90,8 @@ https://huggingface.co/spaces/marcusdemello/shuttlesort
 
 ## Testing
 
-I tested my program with normal inputs in correct format using multiple shuttle stops and different crowd counts.  For example, I used familiar stops like ARC, Main Library, Residence, and BioSci each with different numbers, and the program sorted them correctly from the lowest to highest crowd counts.  I also had to test my program using invalid input, so I tried using a word instead of a number, and also an incorrect format.  Both times the output fit the proper error, and it told me whether it was if it was a formatting issue or a subtsnace issue.  These tests show that the program works for normal cases as well as simple error cases.
+I tested my program with normal inputs in the correct format using multiple shuttle stops and different crowd counts.  For example, I used familiar stops like ARC, Main Library, Residence, and BioSci each with different numbers, and the program sorted them correctly from the lowest to highest crowd counts.  I also had to test my program using invalid input, so I tried using a word instead of a number, and also an incorrect format.  Both times the output fit the proper error, and it told me whether it was a formatting issue or a substance issue.  These tests show that the program works for normal cases as well as simple error cases.
 
 ## Author & AI Acknowledgment
 Author: Marcus DeMello
-AI Disclosure:  AI such as ChatGPT was used to debug code, help with structuring, help with efficiency, and provide new ideas.  All final changes, testing, and modifications were done by me.	
+AI Disclosure: I used AI (ChatGPT) throughout the entire development of this project, which includes helping me refine and generate portions of the merge sort code, helping with debugging my code errors, guiding the setup of the Gradio interface, helping with structuring the README, and clarifying some parts of the algorithm.  All code, testing, and final decisions were reviewed, modified, and understood by me.  
