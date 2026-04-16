@@ -19,7 +19,7 @@ Each shuttle stop has a crowd count that can be compared easily, so merge sort f
 ## Demo Screenshot
 
 ### Valid Input
-![Valid Run](goodrun.png)
+![Good Run](goodrun.png)
 
 ## Problem Breakdown & Computational Thinking
 
@@ -74,13 +74,13 @@ Output: Sorted list of shuttle stops ranging lowest to highest crowd
 ## Steps to Run
 
 1. install python
-2. install gradio using pip3 install gradio
+2. install gradio using: pip3 install gradio
 3. run the program using: python3 app.py
 4. open link from terminal
 5. enter shuttle stops in correct format: name, number
 
 ## Hugging Face Link
-https://huggingface.co/spaces/marcusdemello/shuttlesort
+https://huggingface.co/spaces/marcusdemello/shuttlesort/tree/main
 
 ## Testing
 
@@ -114,4 +114,4 @@ If the user doesn't even input anything, the program can still let them know wha
 
 ## Author & AI Acknowledgment
 Author: Marcus DeMello
-AI Disclosure:  AI such as ChatGPT was used to debug code, help with structuring, help with efficiency, and provide new ideas.  All final changes, testing, and modifications were done by me.	
+AI Disclosure:  AI such as ChatGPT was used to help with refining or generating code, helping me debug my code, help with structuring and efficiency, guide my use of gradio, and provide new ideas.  All final changes, testing, and modifications were done by me.	
