@@ -80,7 +80,7 @@ Output: Sorted list of shuttle stops ranging lowest to highest crowd
 5. enter shuttle stops in correct format: name, number
 
 ## Hugging Face Link
-https://huggingface.co/spaces/marcusdemello/shuttlesort/tree/main
+https://huggingface.co/spaces/marcusdemello/ShuttleSorter
 
 ## Testing
 
